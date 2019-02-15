@@ -1,0 +1,17 @@
+{
+  "name": "flexsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukasz Siwiec",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "uglify": "^0.1.5"
+  }
+}
