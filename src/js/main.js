@@ -7,7 +7,6 @@ burger.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   body.classList.toggle("block-scroll");
-  html.classList.toggle("block-scroll");
   navList.classList.toggle("open");
   navLinks.forEach((link, index) => {
     link.style.transition = `transform ${index * 0.3 + 0.3}s ease-out`;

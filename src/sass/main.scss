@@ -16,6 +16,7 @@ body {
   }
 }
 header {
+  position: fixed;
   align-items: center;
   width: 100vw;
   background-color: $tertiary-color;

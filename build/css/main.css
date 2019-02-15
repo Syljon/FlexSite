@@ -55,6 +55,7 @@ body {
     overflow: hidden; }
 
 header {
+  position: fixed;
   align-items: center;
   width: 100vw;
   background-color: #3c3c3c; }
