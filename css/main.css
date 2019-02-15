@@ -45,7 +45,8 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   box-sizing: border-box;
@@ -59,3 +60,65 @@ header {
   align-items: center;
   width: 100vw;
   background-color: #3c3c3c; }
+
+.showcase {
+  font-size: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .showcase div {
+    width: 50%;
+    line-height: 1.5;
+    text-align: center;
+    align-items: center; }
+    .showcase div h1 {
+      color: #47f; }
+    .showcase div div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: auto; }
+      .showcase div div a {
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-decoration: none; }
+        .showcase div div a.light {
+          color: #e4e4e4;
+          background-color: #47f;
+          border: 2px solid #e4e4e4; }
+          .showcase div div a.light:hover {
+            color: #47f;
+            background-color: #e4e4e4;
+            border: 2px solid #47f; }
+        .showcase div div a.dark {
+          color: #47f;
+          border: 2px solid #47f; }
+          .showcase div div a.dark:hover {
+            color: #e4e4e4;
+            background-color: #47f;
+            border: 2px solid #47f; }
+
+.aboutus {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 40vh;
+  padding: 30px 20px;
+  background-color: #47f; }
+  .aboutus div {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%; }
+    .aboutus div img {
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%; }
