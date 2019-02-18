@@ -59,11 +59,23 @@ header {
   position: fixed;
   align-items: center;
   width: 100vw;
-  background-color: #3c3c3c; }
+  background-color: #3c3c3c;
+  z-index: 100; }
+
+.section {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 7vh 0; }
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .showcase {
   font-size: 1.5rem;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -71,21 +83,20 @@ header {
   .showcase div {
     width: 50%;
     line-height: 1.5;
-    text-align: center;
-    align-items: center; }
+    text-align: center; }
     .showcase div h1 {
       color: #47f; }
+    .showcase div p {
+      margin-bottom: 30px; }
     .showcase div div {
       display: flex;
-      flex-wrap: wrap;
-      width: 80%;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: auto; }
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%; }
       .showcase div div a {
-        padding: 5px 10px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
         border-radius: 10px;
-        margin-top: 20px;
         text-decoration: none; }
         .showcase div div a.light {
           color: #e4e4e4;
@@ -104,21 +115,114 @@ header {
             border: 2px solid #47f; }
 
 .aboutus {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100vw;
-  min-height: 40vh;
-  padding: 30px 20px;
   background-color: #47f; }
+  .aboutus h1 {
+    color: #e4e4e4;
+    font-size: 3rem; }
   .aboutus div {
-    text-align: center;
-    font-size: 1.2rem;
     line-height: 1.5;
-    width: 100%; }
+    align-items: center; }
     .aboutus div img {
-      border-radius: 10px;
+      border-radius: 30px;
       max-width: 600px;
-      width: 100%; }
+      max-height: 600px;
+      width: 100%;
+      padding: 2vh 0;
+      position: relative; }
+      .aboutus div img:before {
+        content: "qweqweqwe";
+        display: block;
+        width: 50px;
+        height: 25px;
+        background-color: #fff; }
+    .aboutus div p {
+      color: #e4e4e4;
+      font-size: 1.2rem; }
+
+.projects {
+  background-color: #e4e4e4;
+  width: 100%; }
+  .projects h1 {
+    color: #47f;
+    font-size: 3rem;
+    margin-bottom: 3vh; }
+  .projects .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .projects .container .project {
+      margin: 0 2vw 2vh 0;
+      width: 300px;
+      height: 250px;
+      border: 2px solid #47f;
+      background: url(../img/aboutus.jpg);
+      background-position: center;
+      background-size: cover; }
+      .projects .container .project .text {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        color: #e4e4e4; }
+      .projects .container .project:hover {
+        background: #47f; }
+        .projects .container .project:hover .text {
+          opacity: 1; }
+
+.pricelist {
+  background-color: #3c3c3c;
+  position: relative; }
+  .pricelist h1 {
+    position: relative;
+    color: #e4e4e4;
+    font-size: 3rem;
+    margin-bottom: 3vh;
+    z-index: 10; }
+  .pricelist .pricelisttop {
+    display: block;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #47f; }
+  .pricelist .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 2%; }
+    .pricelist .container .card {
+      margin: 2vh 1vw;
+      align-items: center;
+      background-color: #e4e4e4;
+      width: 350px;
+      padding: 30px 25px;
+      line-height: 1.5;
+      box-shadow: 0 2vh 4vw #000000c9; }
+      .pricelist .container .card h2 {
+        font-size: 2rem;
+        color: #47f;
+        margin: 10px 0; }
+      .pricelist .container .card p {
+        font-size: 1.2rem;
+        margin: 10px 0; }
+      .pricelist .container .card ul {
+        list-style-position: inside;
+        text-align: left; }
+      .pricelist .container .card button {
+        font-size: 1.5rem;
+        color: #e4e4e4;
+        background-color: #47f;
+        border-radius: 20px;
+        margin: 20px 0;
+        padding: 10px 20px; }
+        .pricelist .container .card button:hover {
+          background-color: #3c3c3c; }
